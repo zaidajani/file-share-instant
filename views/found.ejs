@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File <%= fileName.name %></title>
+  <link rel="stylesheet" href="/files/style.css">
+</head>
+<body>
+  <div class="card">
+    <img src="/files/download.png">
+    <h1><%= fileName.filename %> File is ready for you.</h1>
+    <br>
+    <br>
+    <a href="/files/<%= fileName.filename %>" class="buttonDownload" download="<%= fileName.filename %> ">Download</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C3FFFF;
+}
+
+header .nav {
+  background-color: #94A3F2;
+  position: absolute;
+  height: 7vh;
+  width: 100%;
+}
+
+.card {
+  position: fixed;
+  margin-top: 180px;
+  background-color: #D3EFFF;
+  height: 300px;
+  width: 30%;
+  text-align: center;
+  border-radius: 20px;
+  left: 100px;
+  border: 2px dashed lightblue;
+  min-width: 400px;
+}
+
+.copy {
+  position: absolute;
+  width: 85%;
+  text-align: center;
+  background-color: lightblue;
+  margin-left: 35px;
+  border-radius: 10px;
+  border: 2px dashed black;
+  height: 70px;
+  margin-top: 10px;
+  display: none;
+}
+
+.input-container input {
+  width: 90%;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 2px dashed lightblue;
+  border-radius: 6px;
+  background: #f5fcff;
+  color: #607d8b;
+  margin-left: -15px;
+}
+
+.input-container {
+  margin-top: 0px;
+  display: none;
+}
+
+.input-container .copyButton {
+  height: 30px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+.card form {
+  margin-top: 28%;
+}
+
+.code {
+  display: none;
+}
+
+.card button {
+  background-color: #D3EFFF;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.card img {
+  position: absolute;
+  height: 60px;
+  margin-top: -80px;
+  margin-left: 23%;
+}
+
+@media screen and (max-width: 728px) {
+  .card {
+    position: absolute;
+    margin-left: -5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .card {
+    margin-left: -50px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .card {
+    margin-left: -85px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .card {
+    position: absolute;
+    padding: 0px;
+    width: 170px;
+    margin-left: -100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header .nav {
+    background-color: #94A3F2;
+    position: absolute;
+    height: 7vh;
+    width: 120%;
+  }
+}
+
